@@ -4,8 +4,10 @@
     <arg name="x0" default="0.0" description="Initial X position of the robot" />
     <arg name="y0" default="0.0" description="Initial Y position of the robot" />
     <arg name="yaw0" default="0.0" description="Initial Yaw orientation of the robot (radians)" />
+    <!-- Here we could open by default our robot or just specify it at the terminal -->
     <arg name="robot" default="rubot/rubot_mecanum.urdf"
          description="Name of the URDF file (e.g., rubot_limo.urdf)" />
+    <!-- Here we could open by default our world or just specify it at the terminal -->
     <arg name="custom_world" default="square3m_walls.world"
           description="Path to the Gazebo world file to load" />
     <let name="robot_path"
